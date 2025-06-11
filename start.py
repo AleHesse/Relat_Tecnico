@@ -21,6 +21,14 @@ from datetime import datetime
 from step2 import calcula_tempo
 from step3 import etapa_final
 
+import os
+from dotenv import load_dotenv
+
+# Carregando as variáveis de ambiente do arquivo .env
+load_dotenv()
+login = os.getenv('login')
+senha = os.getenv('senha')
+
 # ================================ CONFIGURAÇÕES ================================
 arq_default = "./Default.xlsx"
 relatorio_inicial = './relatorios/etapa1.xlsx'
@@ -70,8 +78,8 @@ def relatorio_etapa1():
             driver.get("https://servico.intra.pg/sau/login.asp")
 
             # Login
-            driver.find_element(By.NAME, 'txtLogin').send_keys("alexandreh")
-            driver.find_element(By.NAME, 'txtSenha').send_keys("230636")
+            driver.find_element(By.NAME, 'txtLogin').send_keys(login)
+            driver.find_element(By.NAME, 'txtSenha').send_keys(senha)
             driver.find_element(By.NAME, 'button').click()
 
             # Raspagem das ocorrências
