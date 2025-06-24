@@ -66,9 +66,13 @@ def calcula_tempo():
     # 8. Salvar em novo arquivo
     df.to_excel('relatorios/etapa2.xlsx', index=False)
 
+    etapa_final()
+
 if __name__ == "__main__":
 
-    etapa_final()
+    calcula_tempo()
+
+    
 
 
 
