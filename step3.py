@@ -26,3 +26,7 @@ def etapa_final():
 
     print("Finalizando!!!")
 
+if __name__=="__main__":
+
+    etapa_final()
+

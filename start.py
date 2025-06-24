@@ -32,8 +32,9 @@ senha = os.getenv('senha')
 # ================================ CONFIGURAÇÕES ================================
 arq_default = "./Default.xlsx"
 relatorio_inicial = './relatorios/etapa1.xlsx'
-tecnicos = ['alexandreh']
-# tecnicos = ['alexandreh', 'gabrielca', 'josejn', 'rafaelvb', 'robsonb', 'walterl', 'washingtonc', 'williamp']
+# tecnicos = ['alexandreh']
+tecnicos = ['alexandreh', 'gabrielca', 'josejn', 'robsonb', 'walterl', 'washingtonc'] # Férias Rafael
+# tecnicos = ['alexandreh', 'gabrielca', 'josejn', 'rafaelvb', 'robsonb', 'walterl', 'washingtonc']
 
 # ================================ FUNÇÃO PRINCIPAL ================================
 def relatorio_etapa1():
